@@ -1,0 +1,16 @@
+[
+    {
+        "modid": "noob",
+        "name": "The Game of Noobs",
+        "description": "The mod for noobs. DO NOT USE IF YOU ARE A PRO",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "https://github.com/AwesomeKalin/the-game-of-noobs",
+        "updateUrl": "",
+        "authorList": ["AwesomeKalin55", "AwesomeFootball 123"],
+        "credits": "",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
+]
