@@ -1,14 +1,21 @@
 package io.itch.awesomekalin.noob;
 
+
+
+import io.itch.awesomekalin.noob.proxy.CommonProxy;
+import io.itch.awesomekalin.noob.util.handlers.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import java.sql.Ref;
 
 @Mod(useMetadata = true, modid = Main.MOD_ID)
 public class Main {
@@ -27,7 +34,6 @@ public class Main {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-
     }
 
     /**
@@ -104,4 +110,6 @@ public class Main {
 
     }
     */
+    @SidedProxy(clientSide = io.itch.awesomekalin.noob.Reference.CLIENT, serverSide = Reference.SERVER)
+    public static CommonProxy proxy;
 }
