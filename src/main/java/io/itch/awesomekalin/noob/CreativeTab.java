@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 
 public class CreativeTab extends CreativeTabs {
     public CreativeTab(){
-        super("The Game of Noobs");
+        super("TheGameOfNoobs");
     }
 
     @Override

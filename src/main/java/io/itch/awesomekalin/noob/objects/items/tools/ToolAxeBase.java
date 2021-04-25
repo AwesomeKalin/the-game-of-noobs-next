@@ -7,7 +7,6 @@ import io.itch.awesomekalin.noob.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
@@ -22,7 +21,7 @@ public class ToolAxeBase extends ItemTool implements IHasModel {
         super(material, EFFECTIVE_ON);
         setTranslationKey(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.MATERIALS);
+        setCreativeTab(Main.NOOB_TAB);
 
         ItemInit.ITEMS.add(this);
     }

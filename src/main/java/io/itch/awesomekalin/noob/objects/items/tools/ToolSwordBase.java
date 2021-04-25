@@ -3,8 +3,6 @@ package io.itch.awesomekalin.noob.objects.items.tools;
 import io.itch.awesomekalin.noob.Main;
 import io.itch.awesomekalin.noob.init.ItemInit;
 import io.itch.awesomekalin.noob.util.IHasModel;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 
 public class ToolSwordBase extends ItemSword implements IHasModel {
@@ -13,7 +11,7 @@ public class ToolSwordBase extends ItemSword implements IHasModel {
         super(material);
         setTranslationKey(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.MATERIALS);
+        setCreativeTab(Main.NOOB_TAB);
 
         ItemInit.ITEMS.add(this);
     }
