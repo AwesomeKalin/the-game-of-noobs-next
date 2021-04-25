@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
-  "layers": {
+  "textures": {
     "layer0": "noob:tool/noob_axe"
   }
 }

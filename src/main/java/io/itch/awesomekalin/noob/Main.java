@@ -1,9 +1,6 @@
 package io.itch.awesomekalin.noob;
 
-
-
 import io.itch.awesomekalin.noob.proxy.CommonProxy;
-import io.itch.awesomekalin.noob.util.handlers.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -15,8 +12,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-
-import java.sql.Ref;
 
 @Mod(useMetadata = true, modid = Main.MOD_ID)
 public class Main {
