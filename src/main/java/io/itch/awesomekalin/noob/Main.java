@@ -5,6 +5,7 @@ package io.itch.awesomekalin.noob;
 import io.itch.awesomekalin.noob.proxy.CommonProxy;
 import io.itch.awesomekalin.noob.util.handlers.RegistryHandler;
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +22,7 @@ import java.sql.Ref;
 public class Main {
 
     public static final String MOD_ID = "noob";
+    public static final CreativeTabs NOOB_TAB = new CreativeTab();
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.
