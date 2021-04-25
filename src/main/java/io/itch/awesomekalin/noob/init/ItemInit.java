@@ -23,4 +23,10 @@ public class ItemInit {
     public static final Item MUD_PICKAXE = new ToolPickaxeBase("mud_pickaxe", MUD_TOOL);
     public static final Item MUD_SHOVEL = new ToolShovelBase("mud_shovel", MUD_TOOL);
     public static final Item MUD_SWORD = new ToolSwordBase("mud_sword", MUD_TOOL);
+
+    public static final Item NOOB_AXE = new ToolAxeBase("noob_axe", NOOB_TOOL);
+    public static final Item NOOB_HOE = new ToolHoeBase("noob_hoe", NOOB_TOOL);
+    public static final Item NOOB_PICKAXE = new ToolPickaxeBase("noob_pickaxe", NOOB_TOOL);
+    public static final Item NOOB_SHOVEL = new ToolShovelBase("noob_shovel", NOOB_TOOL);
+    public static final Item NOOB_SWORD = new ToolSwordBase("noob_sword", NOOB_TOOL);
 }
