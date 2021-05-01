@@ -1,8 +1,12 @@
 package io.itch.awesomekalin.noob.init;
 
 import io.itch.awesomekalin.noob.objects.items.ItemBase;
+import io.itch.awesomekalin.noob.objects.items.armor.ArmorModel;
 import io.itch.awesomekalin.noob.objects.items.tools.*;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
 
 import java.util.ArrayList;
@@ -17,9 +21,10 @@ public class ItemInit {
     public static final Item MUD_SHOVEL_TOP = new MudShovel("mud_shovel_top");
     public static final Item MUD_SHOVEL_BOTTOM = new MudShovel("mud_shovel_bottom");
 
-    // Tools need materials!
+    // Tool & armor materials
     public static final Item.ToolMaterial MUD_TOOL = EnumHelper.addToolMaterial("mud_tool", 1, 100, 0.5f, 0.7f, 5);
     public static final Item.ToolMaterial NOOB_TOOL = EnumHelper.addToolMaterial("noob_tool", 2, 150, 0.7f, 1.0f, 7);
+    public static final ItemArmor.ArmorMaterial NOOB_ARMOR = EnumHelper.addArmorMaterial("noob_armor", "noob:noob", 150, new int [] {1, 2, 2, 1}, 7, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
 
     // Mud Tools
     public static final Item MUD_AXE = new ToolAxeBase("mud_axe", MUD_TOOL);
@@ -34,4 +39,10 @@ public class ItemInit {
     public static final Item NOOB_PICKAXE = new ToolPickaxeBase("noob_pickaxe", NOOB_TOOL);
     public static final Item NOOB_SHOVEL = new ToolShovelBase("noob_shovel", NOOB_TOOL);
     public static final Item NOOB_SWORD = new ToolSwordBase("noob_sword", NOOB_TOOL);
+
+    // Noob Armor
+    public static final Item NOOB_HELMET = new ArmorModel("noob_helmet", NOOB_ARMOR, EntityEquipmentSlot.HEAD);
+    public static final Item NOOB_CHESTPLATE = new ArmorModel("noob_chestplate", NOOB_ARMOR, EntityEquipmentSlot.CHEST);
+    public static final Item NOOB_LEGGINGS = new ArmorModel("noob_leggings", NOOB_ARMOR, EntityEquipmentSlot.LEGS);
+    public static final Item NOOB_BOOTS = new ArmorModel("noob_boots", NOOB_ARMOR, EntityEquipmentSlot.FEET);
 }
