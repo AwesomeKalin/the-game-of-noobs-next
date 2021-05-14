@@ -1,6 +1,7 @@
 package io.itch.awesomekalin.noob;
 
 import io.itch.awesomekalin.noob.proxy.CommonProxy;
+import io.itch.awesomekalin.noob.util.handlers.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -16,6 +17,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(useMetadata = true, modid = Main.MOD_ID)
 public class Main {
 
+    public static Main instance;
     public static final String MOD_ID = "noob";
     public static final CreativeTabs NOOB_TAB = new CreativeTab();
 
@@ -31,6 +33,7 @@ public class Main {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
+        RegistryHandler.initRegistries(event);
     }
 
     /**

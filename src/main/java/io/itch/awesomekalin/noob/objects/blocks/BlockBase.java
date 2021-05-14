@@ -6,7 +6,6 @@ import io.itch.awesomekalin.noob.init.ItemInit;
 import io.itch.awesomekalin.noob.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
