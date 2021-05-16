@@ -19,19 +19,17 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import javax.annotation.Nullable;
-
 public class BlockNoobChest extends BlockContainer {
     public BlockNoobChest(String name){
         super(Material.SPONGE);
-        setTranslationKey(name);
         setSoundType(SoundType.SLIME);
+        setTranslationKey(name);
+        setRegistryName(name);
+        setCreativeTab(Main.NOOB_TAB);
         setHardness(1F);
         setResistance(10F);
         setLightLevel(0F);
         setLightOpacity(255);
-        setRegistryName(name);
-        setCreativeTab(Main.NOOB_TAB);
 
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(name));
@@ -56,7 +54,12 @@ public class BlockNoobChest extends BlockContainer {
         }
     }
 
-    @Nullable
+    @Override
+    public boolean hasTileEntity(IBlockState state)
+    {
+        return true;
+    }
+
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
         return new TileEntityNoobChest();
