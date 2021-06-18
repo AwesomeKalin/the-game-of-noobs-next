@@ -13,6 +13,7 @@ public class BlockInit {
 
     // Regular block
     public static final Block NOOB_BLOCK = new BlockBase("noob_block", Material.IRON);
+    public static final Block NOOB_ORE = new BlockBase("noob_ore", Material.ROCK);
 
     // Chests
     public static final Block NOOB_CHEST = new BlockNoobChest("noob_chest");

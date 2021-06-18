@@ -17,3 +17,5 @@ item.noob_helmet.name=Noob Helmet
 item.noob_chestplate.name=Noob Chestplate
 item.noob_leggings.name=Noob Leggings
 item.noob_boots.name=Noob Boots
+tile.noob_ore.name=Noob Ore
+container.noob_chest=Noob Chest
