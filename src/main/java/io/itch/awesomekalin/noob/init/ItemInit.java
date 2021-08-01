@@ -2,6 +2,7 @@ package io.itch.awesomekalin.noob.init;
 
 import io.itch.awesomekalin.noob.objects.items.ItemBase;
 import io.itch.awesomekalin.noob.objects.items.armor.ArmorModel;
+import io.itch.awesomekalin.noob.objects.items.food.ItemCustomFood;
 import io.itch.awesomekalin.noob.objects.items.tools.*;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -45,4 +46,7 @@ public class ItemInit {
     public static final Item NOOB_CHESTPLATE = new ArmorModel("noob_chestplate", NOOB_ARMOR, EntityEquipmentSlot.CHEST);
     public static final Item NOOB_LEGGINGS = new ArmorModel("noob_leggings", NOOB_ARMOR, EntityEquipmentSlot.LEGS);
     public static final Item NOOB_BOOTS = new ArmorModel("noob_boots", NOOB_ARMOR, EntityEquipmentSlot.FEET);
+
+    // Food
+    public static final Item NOOB_FOOD = new ItemCustomFood("noob_food", 1, false);
 }
