@@ -1,7 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "noob:block/noob_chest",
   "textures":
   {
-    "layer0": "noob:item/noob-chest"
+    "layer0": "noob:item/noob_chest"
   }
 }
