@@ -19,3 +19,5 @@ item.noob_leggings.name=Noob Leggings
 item.noob_boots.name=Noob Boots
 tile.noob_ore.name=Noob Ore
 container.noob_chest=Noob Chest
+tile.noob_chest.name=Noob Chest
+item.noob_food.name=Noob Food
